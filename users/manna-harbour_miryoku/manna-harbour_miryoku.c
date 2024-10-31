@@ -88,4 +88,19 @@ combo_t key_combos[COMBO_COUNT] = {
   #endif
   COMBO(thumbcombos_fun, KC_APP)
 };
+
 #endif
+
+bool process_record_user(uint16_t keycode, keyrecord_t *record) {
+    switch (keycode) {
+    case 255:
+        if (record->event.pressed) {
+            // when keycode QMKBEST is pressed
+            SEND_STRING("QMK is the best thing ever!");
+        } else {
+            // when keycode QMKBEST is released
+        }
+        break;
+    }
+    return true;
+}
