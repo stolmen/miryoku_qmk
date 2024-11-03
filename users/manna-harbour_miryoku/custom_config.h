@@ -10,8 +10,12 @@
 #ifndef RGB_MATRIX_ENABLE
 #    define RGB_MATRIX_ENABLE
 #endif
+
+// HEATMAP effect.
 #define ENABLE_RGB_MATRIX_TYPING_HEATMAP
 #define RGB_MATRIX_FRAMEBUFFER_EFFECTS
+#define RGB_MATRIX_TYPING_HEATMAP_DECREASE_DELAY_MS 50 // default is 25
+#define RGB_MATRIX_TYPING_HEATMAP_SPREAD 30            // default is 40
 
 //  this has been copied from
 
@@ -38,3 +42,5 @@ KC_F15,  K20,  K21,  K22,  K23,  K24,         K25,  K26,  K27,  K28,  K29,  KC_F
 )
 // clang-format off
 
+// TODO: mod the heatmap effect so that underglow LEDS spatially close to impact are also lit up
+// add a new purple temperature maybe.
