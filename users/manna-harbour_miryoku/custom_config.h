@@ -16,6 +16,9 @@
 #define RGB_MATRIX_FRAMEBUFFER_EFFECTS
 #define RGB_MATRIX_TYPING_HEATMAP_DECREASE_DELAY_MS 50 // default is 25
 #define RGB_MATRIX_TYPING_HEATMAP_SPREAD 30            // default is 40
+//
+#define MIRYOKU_CLIPBOARD_FUN
+// #define OS_DETECTION_ENABLE
 
 //  this has been copied from
 
