@@ -87,7 +87,8 @@ bool process_record_user(uint16_t keycode, keyrecord_t *record) {
     // detect the host operating sustem, and if it is macos, then
     // tap the appropriate key instead of sending CUA bindings.
     os_variant_t host_os = detected_host_os();
-    if (host_os == OS_MACOS) {
+    bool         is_mac  = (host_os == OS_MACOS) || (host_os == OS_IOS);
+    if (is_mac) {
         if (record->event.pressed) {
             switch (keycode) {
                 case KC_PSTE:
