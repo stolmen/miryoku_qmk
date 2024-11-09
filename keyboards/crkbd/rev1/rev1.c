@@ -17,6 +17,8 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 */
 #include "rev1.h"
 
+// clang-format off
+//
 #ifdef RGB_MATRIX_ENABLE
 
   // Logical Layout
@@ -54,6 +56,9 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
   // 27 22 21 16 13 08       08 13 16 21 22 27  2
   //          05    06       06    05
   //           15 14 07     07 14 15              3
+//
+//48 - 6 = 42
+//54 (42 + 12 underlights)
 
 led_config_t g_led_config = { {
     {  24,  23,  18,  17,  10,   9 },
